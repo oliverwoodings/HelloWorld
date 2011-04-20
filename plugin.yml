@@ -1,0 +1,8 @@
+name: HelloWorld
+main: uk.co.oliwali.HelloWorld.HelloWorld
+version: 0.1
+author: oliverw92
+commands:
+  goto:
+    description:
+    usage: |
