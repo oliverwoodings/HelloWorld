@@ -21,7 +21,7 @@ public class HWPlayerListener extends PlayerListener {
 		String message = plugin.config.getWorldMessage(to.getWorld());
 		if (from.getWorld() != to.getWorld() && message != null)
 			for (String msg : message.split("`n", -1))
-				plugin.sendMessage(event.getPlayer(), msg);
+				Util.sendMessage(event.getPlayer(), msg);
 		
 	}
 	
@@ -30,7 +30,7 @@ public class HWPlayerListener extends PlayerListener {
 		String message = plugin.config.getWorldMessage(player.getWorld());
 		if (message != null)
 			for (String msg : message.split("`n", -1))
-				plugin.sendMessage(player, msg);
+				Util.sendMessage(player, msg);
 	}
 
 }

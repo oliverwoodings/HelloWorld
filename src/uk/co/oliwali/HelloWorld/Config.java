@@ -36,7 +36,7 @@ public class Config {
 		
 		//Attempt save
 		if (!config.save())
-			plugin.sendMessage("severe", "Error while writing to config.yml");
+			Util.severe("Error while writing to config.yml");
 
 	}
 	
